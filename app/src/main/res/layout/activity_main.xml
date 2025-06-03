@@ -15,6 +15,7 @@
      />
     
     <EditText
+        android:id="@+id/main_email"
         style="@style/edit_14"
         android:layout_marginTop="@dimen/_50sdp"
         android:inputType="textEmailAddress"
@@ -22,14 +23,16 @@
         />
 
     <EditText
+        android:id="@+id/main_password"
         style="@style/edit_14"
-        android:maxLength="8"
+        android:maxLength="15"
         android:layout_marginTop="@dimen/_10sdp"
         android:inputType="textPassword"
         android:hint="Password"
          />
 
     <Button
+        android:id="@+id/main_login"
         style="@style/button_14"
         android:layout_marginTop="@dimen/_30sdp"
         android:text="LOG IN"
@@ -42,6 +45,7 @@
         />
 
     <Button
+        android:id="@+id/main_create_account"
         style="@style/button_14"
         android:text="CREATE AN ACCOUNT"
         />

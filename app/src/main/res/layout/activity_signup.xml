@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/signup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/bgStyle"
+    android:orientation="vertical"
+    tools:context=".SignupActivity">
+
+    <TextView
+        style="@style/text_16_bold"
+        android:text="SIGN UP"
+        />
+
+    <EditText
+        android:id="@+id/signup_name"
+        style="@style/edit_14"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        />
+
+    <EditText
+        android:id="@+id/signup_email"
+        style="@style/edit_14"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        />
+
+    <EditText
+        android:maxLength="10"
+        android:id="@+id/signup_contact"
+        style="@style/edit_14"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:inputType="phone"
+        android:hint="Contact No."
+        />
+
+    <EditText
+        android:id="@+id/signup_password"
+        style="@style/edit_14"
+        android:maxLength="15"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:inputType="textPassword"
+        android:hint="Password"
+        />
+
+    <EditText
+        android:id="@+id/signup_confirm_password"
+        style="@style/edit_14"
+        android:maxLength="15"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:inputType="textPassword"
+        android:hint="Confrim Password"
+        />
+
+    <Button
+        android:id="@+id/signup_login"
+        style="@style/button_14"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:text="SIGN UP"
+        />
+
+</LinearLayout>
