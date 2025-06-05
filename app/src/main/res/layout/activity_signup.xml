@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/signup"
@@ -8,6 +8,10 @@
     style="@style/bgStyle"
     android:orientation="vertical"
     tools:context=".SignupActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
     <TextView
         style="@style/text_16_bold"
@@ -57,11 +61,53 @@
         android:hint="Confrim Password"
         />
 
+    <RadioGroup
+        android:id="@+id/signup_gender"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_20sdp">
+
+        <RadioButton
+            style="@style/radio_14"
+            android:id="@+id/signup_female"
+            android:text="Female"
+            />
+
+        <RadioButton
+            style="@style/radio_14"
+            android:id="@+id/signup_male"
+            android:text="Male"
+            />
+
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/signup_country"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </Spinner>
+
+    <CheckBox
+        app:buttonTint = "@color/blue_button"
+        android:id="@+id/signup_terms"
+        android:textSize="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:text="Accept Terms &amp; Conditions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
     <Button
-        android:id="@+id/signup_login"
+        android:id="@+id/signup_button"
         style="@style/button_14"
         android:layout_marginTop="@dimen/_30sdp"
         android:text="SIGN UP"
         />
+    </LinearLayout>
 
-</LinearLayout>
+</ScrollView>

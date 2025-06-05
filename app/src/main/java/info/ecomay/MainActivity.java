@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
                     password.setError("Minimum 6 Character Password Required");
                     
                 } else {
-                    if (email.getText().toString().trim().equalsIgnoreCase("admin@gamil.com") && password.getText().toString().trim().equalsIgnoreCase("Admin@123") ) {
+                    if (email.getText().toString().trim().equalsIgnoreCase("admin@gmail.com") && password.getText().toString().trim().equalsIgnoreCase("Admin@123") ) {
                         System.out.println("Login Successfully");
                         Log.d("RESPONSE", "Login Successfully");
                         Log.e("RESPONSE", "Login Successfully");
