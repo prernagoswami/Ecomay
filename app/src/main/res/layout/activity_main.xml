@@ -22,14 +22,40 @@
         android:hint="Email"
         />
 
-    <EditText
-        android:id="@+id/main_password"
-        style="@style/edit_14"
-        android:maxLength="15"
+    <FrameLayout
         android:layout_marginTop="@dimen/_10sdp"
-        android:inputType="textPassword"
-        android:hint="Password"
-         />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/main_password"
+            style="@style/edit_14"
+            android:maxLength="15"
+            android:inputType="textPassword"
+            android:hint="Password"
+            />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/main_hide"
+            android:padding="@dimen/_1sdp"
+            android:layout_marginRight="@dimen/_40sdp"
+            android:layout_gravity="center_vertical|end"
+            android:src="@drawable/hide"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"/>
+
+        <ImageView
+            android:id="@+id/main_visible"
+            android:padding="@dimen/_1sdp"
+            android:layout_marginRight="@dimen/_40sdp"
+            android:layout_gravity="center_vertical|end"
+            android:src="@drawable/visible"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"/>
+    </FrameLayout>
+
+
 
     <Button
         android:id="@+id/main_login"
