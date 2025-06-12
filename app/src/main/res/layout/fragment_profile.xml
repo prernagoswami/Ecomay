@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/signup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/bgStyle"
+    android:orientation="vertical"
+    tools:context=".SignupActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/profile_name"
+            style="@style/edit_14"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:inputType="textPersonName"
+            android:hint="Name"
+            />
+
+        <EditText
+            android:id="@+id/profile_email"
+            style="@style/edit_14"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            />
+
+        <EditText
+            android:maxLength="10"
+            android:id="@+id/profile_contact"
+            style="@style/edit_14"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:inputType="phone"
+            android:hint="Contact No."
+            />
+
+        <FrameLayout
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/profile_password"
+                style="@style/edit_14"
+                android:maxLength="15"
+                android:inputType="textPassword"
+                android:hint="Password" />
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/profile_hide"
+                android:padding="@dimen/_1sdp"
+                android:layout_marginRight="@dimen/_40sdp"
+                android:layout_gravity="center_vertical|end"
+                android:src="@drawable/hide"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"/>
+
+            <ImageView
+                android:id="@+id/profile_visible"
+                android:padding="@dimen/_1sdp"
+                android:layout_marginRight="@dimen/_40sdp"
+                android:layout_gravity="center_vertical|end"
+                android:src="@drawable/visible"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/profile_confirm_password"
+                style="@style/edit_14"
+                android:maxLength="15"
+                android:inputType="textPassword"
+                android:hint="Confrim Password"
+                />
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/profile_confirm_hide"
+                android:padding="@dimen/_1sdp"
+                android:layout_marginRight="@dimen/_40sdp"
+                android:layout_gravity="center_vertical|end"
+                android:src="@drawable/hide"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"/>
+
+            <ImageView
+                android:id="@+id/profile_confirm_visible"
+                android:padding="@dimen/_1sdp"
+                android:layout_marginRight="@dimen/_40sdp"
+                android:layout_gravity="center_vertical|end"
+                android:src="@drawable/visible"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"/>
+        </FrameLayout>
+
+
+
+        <RadioGroup
+            android:id="@+id/profile_gender"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp">
+
+            <RadioButton
+                style="@style/radio_14"
+                android:id="@+id/profile_female"
+                android:text="Female"
+                />
+
+            <RadioButton
+                style="@style/radio_14"
+                android:id="@+id/profile_male"
+                android:text="Male"
+                />
+
+        </RadioGroup>
+
+        <Spinner
+            android:id="@+id/profile_country"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </Spinner>
+
+        <Button
+            android:id="@+id/profile_edit"
+            style="@style/button_14"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:text="EDIT PROFILE"
+            />
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/profile_submit"
+            style="@style/button_14"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:text="SUBMIT"
+            />
+
+        <Button
+            android:id="@+id/profile_logout"
+            style="@style/button_14"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:text="LOGOUT"
+            />
+
+        <Button
+            android:id="@+id/profile_delete"
+            style="@style/button_14"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:text="DELETE ACCOUNT"
+            />
+    </LinearLayout>
+
+</ScrollView>
