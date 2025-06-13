@@ -9,4 +9,6 @@ public class ConstantSp {
     public static final String PASSWORD = "password";
     public static final String GENDER = "gender";
     public static final String COUNTRY = "county";
+    public static final String CATEGORYID = "categoryid";
+
 }
